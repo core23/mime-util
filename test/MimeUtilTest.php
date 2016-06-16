@@ -16,13 +16,13 @@ class MimeUtilTest extends \PHPUnit_Framework_TestCase
     public function testGetTypeFromExtension()
     {
         $mimeUtil = new MimeUtil();
-        $this->assertEquals('image/png', $mimeUtil->getTypeFormExtension('PNG'));
+        $this->assertEquals('image/png', $mimeUtil->getTypeFromExtension('PNG'));
     }
 
     public function testGetTypeFromExtensionUnknownType()
     {
         $mimeUtil = new MimeUtil();
-        $this->assertNull($mimeUtil->getTypeFormExtension('foobar'));
+        $this->assertNull($mimeUtil->getTypeFromExtension('foobar'));
     }
 
     public function testGetTypeFromFilename()
@@ -31,7 +31,7 @@ class MimeUtilTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('image/png', $mimeUtil->getTypeFromFilename('foo.bar.png'));
     }
 
-    public function testGetTypeFormFilenameUnknownFilename()
+    public function testGetTypeFromFilenameUnknownFilename()
     {
         $mimeUtil = new MimeUtil();
         $this->assertNull($mimeUtil->getTypeFromFilename('foobar'));
