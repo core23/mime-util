@@ -13,8 +13,8 @@
         "php": "^5.6 || ^7.0"
     },
     "require-dev": {
-        "fabpot/php-cs-fixer": "^1.7",
-        "phpunit/phpunit": "^4.0",
+        "friendsofphp/php-cs-fixer": "^1.12",
+        "phpunit/phpunit": "^5.5",
         "sllh/php-cs-fixer-styleci-bridge": "^2.0"
     },
     "autoload": {
