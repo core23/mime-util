@@ -16,7 +16,7 @@ class MimeUtilTest extends \PHPUnit_Framework_TestCase
     public function testGetTypeFromExtension()
     {
         $mimeUtil = new MimeUtil();
-        $this->assertEquals('image/png', $mimeUtil->getTypeFromExtension('PNG'));
+        $this->assertSame('image/png', $mimeUtil->getTypeFromExtension('PNG'));
     }
 
     public function testGetTypeFromExtensionUnknownType()
@@ -28,7 +28,7 @@ class MimeUtilTest extends \PHPUnit_Framework_TestCase
     public function testGetTypeFromFilename()
     {
         $mimeUtil = new MimeUtil();
-        $this->assertEquals('image/png', $mimeUtil->getTypeFromFilename('foo.bar.png'));
+        $this->assertSame('image/png', $mimeUtil->getTypeFromFilename('foo.bar.png'));
     }
 
     public function testGetTypeFromFilenameUnknownFilename()
@@ -40,18 +40,18 @@ class MimeUtilTest extends \PHPUnit_Framework_TestCase
     public function testGetExtensionsFromType()
     {
         $mimeUtil = new MimeUtil();
-        $this->assertEquals(array('png'), $mimeUtil->getExtensionsFromType('image/png'));
+        $this->assertSame(array('png'), $mimeUtil->getExtensionsFromType('image/png'));
     }
 
     public function testGetExtensionsFromTypeMultiple()
     {
         $mimeUtil = new MimeUtil();
-        $this->assertEquals(array('jpe', 'jpeg', 'jpg'), $mimeUtil->getExtensionsFromType('image/jpeg'));
+        $this->assertSame(array('jpe', 'jpeg', 'jpg'), $mimeUtil->getExtensionsFromType('image/jpeg'));
     }
 
     public function testGetExtensionsFromTypeUnknown()
     {
         $mimeUtil = new MimeUtil();
-        $this->assertEquals(array(), $mimeUtil->getExtensionsFromType('foo/bar'));
+        $this->assertSame(array(), $mimeUtil->getExtensionsFromType('foo/bar'));
     }
 }
