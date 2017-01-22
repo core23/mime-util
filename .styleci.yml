@@ -1,16 +1,23 @@
 preset: symfony
 
 enabled:
-  - newline_after_open_tag
-  - ordered_class_elements
-  - ordered_use
+  - align_double_arrow
+  - align_equals
+  - combine_consecutive_unsets
   - long_array_syntax
-# Comment strict rules for the moment. Should be uncomment later to see StyleCI PR results
-#  - strict
-#  - strict_param
-#  - php_unit_construct
-#  - php_unit_strict
+  - linebreak_after_opening_tag
+  - no_php4_constructor
+  - no_useless_else
+  - ordered_class_elements
+  - ordered_imports
+  - php_unit_construct
+  - php_unit_strict
+
+disabled:
+  - unalign_double_arrow
+  - unalign_equals
+  - simplified_null_return
 
 finder:
   exclude:
-    - 'Tests/Fixtures'
+    - 'tests/Fixtures'
