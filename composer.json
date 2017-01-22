@@ -28,7 +28,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Core23\\MimeUtil\\": "test/"
+      "Core23\\MimeUtil\\": "tests/"
     }
   },
   "extra": {
