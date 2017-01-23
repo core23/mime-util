@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Core23\MimeUtil\Test;
+namespace Core23\MimeUtil\Tests;
 
 use Core23\MimeUtil\MimeUtil;
 
