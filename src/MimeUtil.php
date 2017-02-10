@@ -939,7 +939,7 @@ final class MimeUtil
      *
      * @return MimeUtil
      */
-    public static function getInstance()
+    public static function getInstance(): \Core23\MimeUtil\MimeUtil
     {
         if (self::$instance === null) {
             self::$instance = new self();
@@ -955,7 +955,7 @@ final class MimeUtil
      *
      * @return string|null
      */
-    public function getTypeFromExtension($extension)
+    public function getTypeFromExtension(string $extension)
     {
         $extension = strtolower($extension);
 
@@ -969,7 +969,7 @@ final class MimeUtil
      *
      * @return string|null
      */
-    public function getTypeFromFilename($filename)
+    public function getTypeFromFilename(string $filename)
     {
         return $this->getTypeFromExtension(pathinfo($filename, PATHINFO_EXTENSION));
     }
@@ -981,7 +981,7 @@ final class MimeUtil
      *
      * @return string[]
      */
-    public function getExtensionsFromType($mimeType)
+    public function getExtensionsFromType(string $mimeType): array
     {
         $mimeType = strtolower($mimeType);
 
