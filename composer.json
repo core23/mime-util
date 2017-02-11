@@ -1,11 +1,13 @@
 {
   "name": "core23/mime-util",
+  "type": "library",
   "description": "Mimetype helper utils",
   "keywords": [
     "apache",
     "mimetype",
     "mime"
   ],
+  "homepage": "https://core23.de",
   "license": "MIT",
   "authors": [
     {
