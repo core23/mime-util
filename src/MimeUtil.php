@@ -939,7 +939,7 @@ final class MimeUtil
      *
      * @return MimeUtil
      */
-    public static function getInstance(): \Core23\MimeUtil\MimeUtil
+    public static function getInstance(): self
     {
         if (self::$instance === null) {
             self::$instance = new self();
