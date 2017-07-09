@@ -955,7 +955,7 @@ final class MimeUtil
      *
      * @return string|null
      */
-    public function getTypeFromExtension(string $extension)
+    public function getTypeFromExtension(string $extension): ?string
     {
         $extension = strtolower($extension);
 
@@ -969,7 +969,7 @@ final class MimeUtil
      *
      * @return string|null
      */
-    public function getTypeFromFilename(string $filename)
+    public function getTypeFromFilename(string $filename): ?string
     {
         return $this->getTypeFromExtension(pathinfo($filename, PATHINFO_EXTENSION));
     }
