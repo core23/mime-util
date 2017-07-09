@@ -28,7 +28,7 @@ final class MimeUtil
      *
      * @var string[]
      */
-    private $mimetypes = array(
+    private static $mimetypes = array(
         '3dml'        => 'text/vnd.in3d.3dml',
         '3g2'         => 'video/3gpp2',
         '3gp'         => 'video/3gpp',
@@ -959,7 +959,7 @@ final class MimeUtil
     {
         $extension = strtolower($extension);
 
-        return isset($this->mimetypes[$extension]) ? $this->mimetypes[$extension] : null;
+        return isset($this->mimetypes[$extension]) ? static::$mimetypes[$extension] : null;
     }
 
     /**
@@ -985,6 +985,6 @@ final class MimeUtil
     {
         $mimeType = strtolower($mimeType);
 
-        return array_keys($this->mimetypes, $mimeType);
+        return array_keys(static::$mimetypes, $mimeType);
     }
 }
