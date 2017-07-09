@@ -959,7 +959,7 @@ final class MimeUtil
     {
         $extension = strtolower($extension);
 
-        return isset($this->mimetypes[$extension]) ? static::$mimetypes[$extension] : null;
+        return self::$mimetypes[$extension] ?? null;
     }
 
     /**
@@ -985,6 +985,6 @@ final class MimeUtil
     {
         $mimeType = strtolower($mimeType);
 
-        return array_keys(static::$mimetypes, $mimeType);
+        return array_keys(self::$mimetypes, $mimeType);
     }
 }
