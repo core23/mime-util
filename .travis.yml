@@ -27,6 +27,8 @@ matrix:
       env: COMPOSER_FLAGS="--prefer-lowest"
   allow_failures:
     - php: nightly
+    - php: 7.1
+      env: TARGET=phpstan
 
 before_install:
  - phpenv config-rm xdebug.ini
