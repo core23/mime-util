@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * (c) Christian Gripp <mail@core23.de>
  *
@@ -14,45 +16,45 @@ use PHPUnit\Framework\TestCase;
 
 class MimeUtilTest extends TestCase
 {
-    public function testGetTypeFromExtension()
+    public function testGetTypeFromExtension(): void
     {
         $mimeUtil = new MimeUtil();
         $this->assertSame('image/png', $mimeUtil->getTypeFromExtension('PNG'));
     }
 
-    public function testGetTypeFromExtensionUnknownType()
+    public function testGetTypeFromExtensionUnknownType(): void
     {
         $mimeUtil = new MimeUtil();
         $this->assertNull($mimeUtil->getTypeFromExtension('foobar'));
     }
 
-    public function testGetTypeFromFilename()
+    public function testGetTypeFromFilename(): void
     {
         $mimeUtil = new MimeUtil();
         $this->assertSame('image/png', $mimeUtil->getTypeFromFilename('foo.bar.png'));
     }
 
-    public function testGetTypeFromFilenameUnknownFilename()
+    public function testGetTypeFromFilenameUnknownFilename(): void
     {
         $mimeUtil = new MimeUtil();
         $this->assertNull($mimeUtil->getTypeFromFilename('foobar'));
     }
 
-    public function testGetExtensionsFromType()
+    public function testGetExtensionsFromType(): void
     {
         $mimeUtil = new MimeUtil();
-        $this->assertSame(array('png'), $mimeUtil->getExtensionsFromType('image/png'));
+        $this->assertSame(['png'], $mimeUtil->getExtensionsFromType('image/png'));
     }
 
-    public function testGetExtensionsFromTypeMultiple()
+    public function testGetExtensionsFromTypeMultiple(): void
     {
         $mimeUtil = new MimeUtil();
-        $this->assertSame(array('jpe', 'jpeg', 'jpg'), $mimeUtil->getExtensionsFromType('image/jpeg'));
+        $this->assertSame(['jpe', 'jpeg', 'jpg'], $mimeUtil->getExtensionsFromType('image/jpeg'));
     }
 
-    public function testGetExtensionsFromTypeUnknown()
+    public function testGetExtensionsFromTypeUnknown(): void
     {
         $mimeUtil = new MimeUtil();
-        $this->assertSame(array(), $mimeUtil->getExtensionsFromType('foo/bar'));
+        $this->assertSame([], $mimeUtil->getExtensionsFromType('foo/bar'));
     }
 }

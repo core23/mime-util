@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * (c) Christian Gripp <mail@core23.de>
  *
@@ -28,7 +30,7 @@ final class MimeUtil
      *
      * @var string[]
      */
-    private static $mimetypes = array(
+    private static $mimetypes = [
         '3dml'        => 'text/vnd.in3d.3dml',
         '3g2'         => 'video/3gpp2',
         '3gp'         => 'video/3gpp',
@@ -932,7 +934,7 @@ final class MimeUtil
         'zir'         => 'application/vnd.zul',
         'zirz'        => 'application/vnd.zul',
         'zmm'         => 'application/vnd.handheld-entertainment+xml',
-    );
+    ];
 
     /**
      * Get a singleton instance of the class.
@@ -955,7 +957,7 @@ final class MimeUtil
      *
      * @return string|null
      */
-    public function getTypeFromExtension(string $extension): ? string
+    public function getTypeFromExtension(string $extension): ?string
     {
         $extension = strtolower($extension);
 
@@ -969,7 +971,7 @@ final class MimeUtil
      *
      * @return string|null
      */
-    public function getTypeFromFilename(string $filename): ? string
+    public function getTypeFromFilename(string $filename): ?string
     {
         return $this->getTypeFromExtension(pathinfo($filename, PATHINFO_EXTENSION));
     }
