@@ -14,7 +14,7 @@ namespace Core23\MimeUtil\Tests;
 use Core23\MimeUtil\MimeUtil;
 use PHPUnit\Framework\TestCase;
 
-class MimeUtilTest extends TestCase
+final class MimeUtilTest extends TestCase
 {
     public function testGetTypeFromExtension(): void
     {
