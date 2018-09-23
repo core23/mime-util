@@ -1,3 +1,58 @@
+23/09/2018 12:54  0.2.1  Cleanup export archive
+f03aa15 Updated .editorconfig
+f633902 TRAVIS: Moved dependencies check to allow failures
+aff04a2 Sync config
+d450d81 Added composer-require-checker to build
+9685425 Sync phpstan config
+b4e6f27 Require latest phpstan version
+a6689a4 Created issue templates
+50d484a Don't use PHPUnit 7 yet
+6e8c09b Improved documentation
+87a177c Adding stages to travis build
+6ebbfe8 Replaced composer.phar with composer in docs
+c56fa89 Make tests final
+1afc916 Ignore vendor-bin when calling lint
+5f02551 Use weak vendors mode
+315beff Added rmt tool
+12ed68a Normalize composer.json file
+b53a076 Cleanup PHPStan ignores
+28d2b83 Added dev tools via composer-bin plugin
+fbcf9f0 Sync config
+80a6a26 Use global phpunit version when calling RMT
+4fa0b7a Removed PHPUnit from phpstan
+f292b5a Use PHPUnit 6
+49f0950 Moved all translation to xlf
+d2b21c6 Ignore PHPUnit warnings when calling phpstan
+61ae019 Added phpstan extension to travis
+7b0ac9c Removed hard phpunit dependency
+b109b90 Removed version information from phpunit.xml.dist
+b49bd72 Ignore PHPUnit errors when calling phpstan
+ad29d4b Fixed coveralls build
+520cdcc Sync build config
+5898ea3 Removed duplicate License information
+b8efa00 Removed code climate status
+607df74 Sync config
+7f92511 Added missing license
+ff9f03d Updated travis config for outdated symfony versions
+b8da622 Require latest phpstan version
+eddc072 Fixed CS
+95fde40 Sync config
+3b366e7 Sync config
+a71487a Added .editorconfig
+88a2128 Apply fixes from StyleCI
+ef74f7c Added support for PHP 7.2 and Symfony 3.4 / 4.x
+40e7318 Fixed PHPUnit path config
+12ce527 Fixed CS
+9be3c6c Cleanup phpstan config
+af42983 Force phpstan check when running travis
+83b535b Apply fixes from StyleCI
+d5b9784 Fixed CS
+b3d3362 Apply fixes from StyleCI
+07b36b2 Fixed CS
+a02154b Apply fixes from StyleCI
+7b2b140 Fixed CS
+460161c Cleanup autoloader for tests
+1d3bd09 [travis] Removed xdebug config
 14/09/2017 08:09  0.2.0  0.2.0
 f3a6c2f [travis] Moved phpstan to allow failures
 b08ac78 Use latest phpstan version
