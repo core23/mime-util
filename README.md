@@ -13,9 +13,6 @@ MimeUtil
 [![Code Climate](https://codeclimate.com/github/core23/mime-util/badges/gpa.svg)](https://codeclimate.com/github/core23/mime-util)
 [![Coverage Status](https://coveralls.io/repos/core23/mime-util/badge.svg)](https://coveralls.io/r/core23/mime-util)
 
-[![Donate to this project using Flattr](https://img.shields.io/badge/flattr-donate-yellow.svg)](https://flattr.com/profile/core23)
-[![Donate to this project using PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/gripp)
-
 Helper library for mimetype to file extension conversion.
 
 ## Installation
