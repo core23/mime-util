@@ -987,6 +987,6 @@ final class MimeUtil
     {
         $mimeType = strtolower($mimeType);
 
-        return array_keys(self::$mimetypes, $mimeType);
+        return array_keys(self::$mimetypes, $mimeType, true);
     }
 }
